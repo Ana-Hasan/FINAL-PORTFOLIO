@@ -1,46 +1,289 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Ana Hasan – Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ana Hasan - Creative Tech Explorer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-  <div class="background-animation"></div>
-
-  <div class="wrapper">
-    <section class="section" id="landing">
-      <div class="content">
-        <div class="photo-frame">
-          <img src="https://via.placeholder.com/200" alt="Ana Hasan photo" />
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#">Ana Hasan</a>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#about" class="nav-link active">About</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
-        <h1>Hi, I'm Ana Hasan</h1>
-        <p class="tagline">Type Shit.</p>
-        
-      </div>
+    </nav>
+
+
+    <section class="hero" id="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-name">Ana Hasan</h1>
+                <p class="hero-tagline">CSE Undergrad | TIET</p>
+                <p class="hero-description">I’m a Computer Science student beginning to explore my interests in tech. Right now, I’m diving into DSA, backend web development, and slowly figuring out what excites me the most. This portfolio is a small reflection of the things I’m learning and building along the way.</p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">View Learning Journey</a>
+                    <a href="#contact" class="btn btn-secondary">Contact Me</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="hero-avatar">
+                    <img src="84bab561-0587-4b31-81fe-404602170d5b.jpg" alt="Ana Hasan Avatar">
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <i class="fas fa-chevron-down"></i>
+        </div>
     </section>
 
     <section class="section" id="about">
-      <h2>About Me</h2>
-      <p>
-        I'm Ana, a passionate developer who loves blending code with creativity. When I'm not coding, I'm doodling ideas and bringing them to life!
-      </p>
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Hello! My name is Ana Hasan, and I'm a Computer Science undergraduate at Thapar University. I'm in the early stages of my tech journey, exploring areas like data structures & algorithms, backend development, and web technologies.
+
+I enjoy learning how things work behind the scenes — whether it's building user-friendly websites or solving logical problems through code. </p> 
+<p>I’m currently working on small projects to build my skills and understand what I truly enjoy in the world of tech.</p>
+
+<p>academics, I’m part of student communities like GirlUp and MLSC (Microsoft Learn Student Chapter), and enjoy taking part in hackathons, tech events, and creative projects. I'm always curious, always learning, and excited about where this path will take me.
+
+</p>
+                    
+                </div>
+                <div class="about-image">
+                    <img src="b3ba71d4-f484-4303-bc66-f27166a931c9.jpg" alt="About Ana Hasan">
+                </div>
+            </div>
+        </div>
     </section>
 
+
+    <section class="section" id="projects">
+        <div class="container">
+            <h2 class="section-title">My Learning Journey</h2>
+            <div class="projects-grid">
+          
+                <div class="project-card learning-card">
+                    <div class="project-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-badge">Currently Learning</div>
+                        <h3>Full-Stack Development</h3>
+                        <p>Diving deep into modern web development with JavaScript, exploring both frontend and backend technologies to build complete applications.</p>
+                        <div class="project-tech">
+                          <span class="tech-tag">HTML5 / CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">React</span>
+                        </div>
+                        <div class="project-status">
+                            <div class="status-bar">
+                                <div class="status-progress" style="width: 75%"></div>
+                            </div>
+                            <span class="status-text">75% Complete</span>
+                        </div>
+                    </div>
+                </div>
+
+              
+                <div class="project-card concept-card">
+                    <div class="project-icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-badge">Hackathon projects</div>
+                        <h3>KONNECT - concept of student connect <portal></portal></h3>
+                        <p>Konnect is a student-focused web platform designed to simplify college life. It brings together key features like a digital marketplace, rental system, academic resources, and study rooms — all in one place. Built using HTML, CSS, JavaScript, and MongoDB, Konnect helps students connect, exchange, and stay organized.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">UI/UX Design</span>
+                            <span class="tech-tag">Canva</span>
+                            <span class="tech-tag">User Research</span>
+                        </div>
+                       
+                    </div>
+                </div>
+
+          
+                <div class="project-card challenge-card">
+                    <div class="project-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-badge">Challenge</div>
+                        <h3>My DSA Journey</h3>
+                        <p>I’ve recently started diving into data structures and algorithms to build a strong foundation in problem-solving. From arrays and recursion to sorting and searching — every day is about learning something new and pushing my logical thinking further.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">C++</span>
+                            <span class="tech-tag">Algorithms</span>
+                            <span class="tech-tag">Problem Solving</span>
+                        </div>
+                        <div class="challenge-stats">
+                            <div class="stat-item">
+                                <span class="stat-number">10</span>
+                                <span class="stat-label">Days Complete</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">15</span>
+                                <span class="stat-label">Problems Solved</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            
+                <div class="project-card experiment-card">
+                    <div class="project-icon">
+                        <i class="fas fa-flask"></i>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-badge">Experiment</div>
+                        <h3>Creative Code Lab</h3>
+                        <p>Experimenting with creative coding, generative art, and interactive animations. Combining logic with creativity to explore digital art.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">CSS Animations</span>
+                            <span class="tech-tag">Canvas API</span>
+                        </div>
+                        <div class="experiment-preview">
+                            <div class="color-block" style="background: linear-gradient(45deg, #ff1493, #ffd700)"></div>
+                            <div class="color-block" style="background: linear-gradient(135deg, #00ff88, #ff1493)"></div>
+                            <div class="color-block" style="background: linear-gradient(225deg, #ffd700, #00ff88)"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+  
+    <section class="section" id="experience">
+        <div class="container">
+            <h2 class="section-title">My Experience</h2>
+            <div class="timeline">
+              
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Society Leadership - GirlUp President</h3>
+                        <p class="timeline-period">Session 2026</p>
+                        <p>Elected as President of the GirlUp society, where I lead a passionate team to organize gender equity initiatives, awareness campaigns, and community collaborations. Responsible for overseeing event planning, managing outreach, mentoring juniors, and creating a safe and empowering space for all members.</p>
+                    </div>
+                </div>
+
+              
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Tech Team Member - MLSC</h3>
+              
+                        <p>Contributed as a core tech member in organizing college-wide hackathons and tech events. Assisted with web development tasks, brainstorming tech solutions, and managing event workflows alongside a dynamic team.</p>
+                    </div>
+                </div>
+
+              
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Event Hosting & School Leadership</h3>
+                        
+                        <p>Actively involved in hosting school functions, talent shows, and cultural programs. Took charge of stage anchoring, scriptwriting, and crowd engagement for diverse audiences. These experiences helped build confidence, articulation, and presence.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <section class="section" id="skills">
+        <div class="container">
+            <h2 class="section-title">My Skills</h2>
+            <div class="skills-content">
+                
+                <div class="skills-category">
+                    <h3>Frontend Development</h3>
+                    <div class="skills-tags">
+                        <span class="skill-tag">HTML</span>
+                        <span class="skill-tag">CSS</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">React</span>
+                    
+                    </div>
+                </div>
+
+                <!-- Category 2 -->
+                <div class="skills-category">
+                    <h3>Backend Development</h3>
+                    <div class="skills-tags">
+                        <span class="skill-tag">Node.js</span>
+                        <span class="skill-tag">MongoDB</span>
+                                           
+                    </div>
+                </div>
+
+                
+                <div class="skills-category">
+                    <h3>Programming</h3>
+                    <div class="skills-tags">
+                        <span class="skill-tag">C</span>
+                        <span class="skill-tag">C++</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+  
     <section class="section" id="contact">
-      <h2>Contact Me</h2>
-      <div class="icons">
-        <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111370.png" alt="Discord" /></a>
-        <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram" /></a>
-        <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/145/145807.png" alt="LinkedIn" /></a>
-        <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/5968/5968705.png" alt="Fiverr" /></a>
-        <a href="mailto:ana@example.com"><img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Email" /></a>
-      </div>
+        <div class="container">
+            <h2 class="section-title">Contact Me</h2>
+            <div class="contact-content">
+                <div class="contact-text">
+                    <p>I'm always open to new opportunities and collaborations. Feel free to reach out to me with any questions or inquiries.</p>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/ana-hasan-12683b31a/" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/Ana-Hasan" class="social-link"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social-link"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
     </section>
-  </div>
 
-  <script src="script.js"></script>
+    
+   
 </body>
 </html>
